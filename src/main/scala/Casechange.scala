@@ -15,6 +15,7 @@ object Casechange extends App{
   val mapf=flatmap.map(x=>(x,1))
   val reducef=mapf.reduceByKey(_+_)
   reducef.collect.foreach(println)
+  // reducef.saveAsTextFile("C:\\Users\\user\\Desktop\\Shared_Folder\\new")
   //scala.io.StdIn.readLine()
   }
 
